@@ -63,7 +63,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
     })
     res.status(200).json({
         status: true,
-        message: "Created by aqulzz",
+        message: "Created by Mikel",
         result: {
             originalname: req.file.originalname,
             encoding: req.file.encoding,
@@ -95,7 +95,7 @@ app.post('/multi-upload', upload.array('files', 10), (req, res) => {
     });
     res.status(200).json({
         status: true,
-        message: "Created by aqulzz",
+        message: "Created by Mikel",
         result: result
     })
 })
